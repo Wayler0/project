@@ -8,7 +8,6 @@ function updateTime() {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
     const time = `${hours}:${minutes}:${seconds}`;
-    const month = 
     const date = now.toLocaleDateString();
 
     document.getElementById('day').textContent = `Day: ${dayOfWeek}`;
