@@ -1,3 +1,18 @@
 html{
     background-color: azure;
 }
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contacts{
+    background-color: rgb(172, 243, 243);
+    padding: 10px;
+}
