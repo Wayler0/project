@@ -1,15 +1,98 @@
 html{
     background-color: azure;
 }
-.card-container {
+.info-left{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+/* Keyframes for blinking and color change */
+@keyframes blink {
+    0% { opacity: 1; color: black; }
+    50% { opacity: 0; color: red; }
+    100% { opacity: 1; color: blue; }
+}
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide the navbar by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar a {
+        margin: 10px 0;
+    }
+    .menu-icon {
+        display: block; /* Show the burger icon on small screens */
+    }
+}
+.blink {
+    text-align: center;
+    animation: blink 3s infinite; /* Apply the animation */
+}
+body {
+    background-color: azure;
+}
+.click {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    background-color: #f0f0f0;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    padding: 10px;
+}
+
+.card {
+    height: max-content;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 300px; /* Adjust the width as needed */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
     width: 100%;
-    box-sizing: border-box;
+    height: 400px;
+}
+
+.card-content {
+    padding: 16px;
+    background-color: white;
+    flex: 1 1 calc(33.333% - 40px);
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0;
 }
 
 #contacts{
