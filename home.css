@@ -1,3 +1,46 @@
 html{
     background-color: azure;
 }
+.info-left{
+    display: flex;
+    justify-content: left;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    font-size: x-large;
+}
+.navBar{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    background-color: aqua;
+    padding: 5px;
+    text-align: center;
+    color: yellow;
+}
+.linkCourse, .linkAbout, .linkContact{
+    padding: 5px;
+    
+    background-color: blue;
+    border-radius: 5px;
+    color: yellow;
+    font-size: xx-large;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.card-img-top{
+    justify-content: space-around;
+    display: flex;
+    size: 300rem;
+}
