@@ -12,7 +12,7 @@ header {
 }
 /* Keyframes for blinking and color change */
 @keyframes blink {
-    0% { opacity: 1; color: black; }
+    10% { opacity: 1; color: black; }
     50% { opacity: 0; color: red; }
     100% { opacity: 1; color: black; }
 }
@@ -69,16 +69,24 @@ header {
     text-align: center;
     animation: blink 5s infinite; /* Apply the animation */
 }
+.scrolling-text-container {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    background-color: darkcyan;
+    padding: 30px;
+}
 
 .scrolling-text {
+    display: inline-block;
+    position: absolute;   
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: darkcyan;
     padding: 5px;
     background-attachment: fixed;
     font-size: large;
-    animation: scroll-left 60s linear infinite;
+    animation: scroll-left 30s linear infinite;
 }
 
 @keyframes scroll-left {
