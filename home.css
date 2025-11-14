@@ -144,30 +144,77 @@ body{background-color:var(--bg)}
 }
 
 .fa-facebook {
-    background: #1877f2;
+    background: #1f1f1f;
     color: white;
 }
 
 .fa-twitter {
-    background: #000000;
+    background: #1f1f1f;
     color: white;
 }
 
 .fa-instagram {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: #1f1f1f;
     color: white;
 }
 
 .fa-envelope {
-    background: var(--primary);
+    background: #1f1f1f;
     color: white;
 }
 
-#contacts{
-    background:linear-gradient(135deg, #f0f9ff 0%, #eff6ff 100%);
-    border-top:3px solid var(--primary);
-    padding:2rem;
-    margin-top:2rem;
+#contacts {
+    background: #ffffff;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    color: #1f1f1f;
+}
+
+#contacts p {
+    color: #1f1f1f;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    line-height: 1.8;
+}
+
+#contacts a {
+    color: #1f1f1f;
+    text-decoration: none;
+    border-bottom: 2px solid #000000;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+
+#contacts a:hover {
+    background-color: #f5f5f5;
+    border-bottom-color: #333333;
+}
+
+#contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#contacts ul li {
+    margin: 0.75rem 0;
+    color: #1f1f1f;
+}
+
+.social-icons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 
