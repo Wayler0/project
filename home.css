@@ -144,77 +144,117 @@ body{background-color:var(--bg)}
 }
 
 .fa-facebook {
-    background: #1f1f1f;
+    background: #1877f2;
     color: white;
 }
 
 .fa-twitter {
-    background: #1f1f1f;
+    background: #000000;
     color: white;
 }
 
 .fa-instagram {
-    background: #1f1f1f;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
 }
 
 .fa-envelope {
-    background: #1f1f1f;
+    background: var(--primary);
     color: white;
 }
 
+/* Contacts Section Styling */
 #contacts {
-    background: #ffffff;
-    border-top: 3px solid #000000;
-    border-bottom: 3px solid #000000;
+    background: linear-gradient(180deg, #f8f9fa 0%, #f3f4f6 100%);
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
     padding: 3rem 2rem;
     margin-top: 3rem;
-    color: #1f1f1f;
 }
 
-#contacts p {
-    color: #1f1f1f;
-    font-weight: 600;
-    margin: 0.5rem 0;
-    line-height: 1.8;
-}
-
-#contacts a {
-    color: #1f1f1f;
-    text-decoration: none;
-    border-bottom: 2px solid #000000;
-    transition: all 0.2s ease;
-    font-weight: 500;
-    padding-bottom: 2px;
-}
-
-#contacts a:hover {
-    background-color: #f5f5f5;
-    border-bottom-color: #333333;
-}
-
-#contacts ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-#contacts ul li {
-    margin: 0.75rem 0;
-    color: #1f1f1f;
-}
-
-.social-icons {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+#contacts > p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
+}
+
+.contacts p {
+    color: var(--text);
+    font-size: 0.95rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.6;
+}
+
+.contacts a {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contacts a:hover {
+    color: var(--primary-dark);
+    border-bottom-color: var(--primary);
+}
+
+.contacts a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    transition: width 0.3s ease;
+}
+
+.contacts a:hover::before {
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.social-icons .fa {
+    transition: all 0.3s ease;
+}
+
+.social-icons .fa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    #contacts {
+        padding: 2rem 1rem;
+    }
+    
+    .social-icons {
+        gap: 0.75rem;
+        justify-content: center;
+    }
 }
 
 
