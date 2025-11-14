@@ -1,9 +1,11 @@
 document.getElementById("menu-icon").addEventListener("click", function() {
     var navbar = document.getElementById("navbar");
-    if (navbar.style.display === "flex") {
-        navbar.style.display = "none";
+    var expanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', String(!expanded));
+    if(!expanded){
+        navbar.classList.add('open');
     } else {
-        navbar.style.display = "flex";
+        navbar.classList.remove('open');
     }
 });
 const events = [

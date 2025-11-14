@@ -1,24 +1,76 @@
 body {
-    justify-content: center;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-size: clamp(14px, 1.8vw, 16px);
+    color: #0f172a;
 }
 
 .centered-container {
     background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-left: 4px solid #1e40af;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     text-align: center;
-    margin: 20px 0;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
 }
+
+.centered-container h1 {
+    color: #1e40af;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    margin-top: 0;
+}
+
+.centered-container p {
+    color: #4b5563;
+    line-height: 1.8;
+}
+
 .courses1 {
-    width: 60%;
+    max-width: 900px;
     background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-left: 4px solid #059669;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     text-align: left;
-    margin: 20px 0;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+
+.courses1 h1 {
+    color: #1e40af;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-top: 0;
+}
+
+.courses1 p {
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+.courses1 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.courses1 li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+}
+
+.courses1 li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width:768px){
+  .courses1,.centered-container{
+    width: 90%;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
 }
 h1 {
     margin-top: 0;
